@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Converter</title>
+<style type="text/css">
+#title{
+	line-height:0;
+	font-size: 120%
+}
+body{
+	text-align:center;
+	font-size:400%;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color:#f2f2f2;
+}
+#tab{
+	width:100%;
+	text-align:center;
+	line-height:150%;
+	margin:auto;
+}
+input{
+	font-size:100%;
+	text-align:center;
+	height:40%;
+	margin:auto;
+    width: 50%;
+}
+button{
+	font-size:100%;
+	border-radius: 5px;
+	border-style: groove;
+	border-width: 3px;
+	background-color: #bfbfbf;
+}
+button:after{
+	Border-style:ridge;
+}
+button:hover{
+	background-color:#a6a6a6;
+}
+</style>
+</head>
+
+<body>
+	<div id='main'>
+		<p id='title'>Distance</p>
+	   	<table id='tab'>
+		  <tr>
+		    <td><p id='lab1'>Kilometers:</p></td>
+		    <td><input type="number" id='txt1' inputmode='numeric'></input></td> 
+		  </tr>
+		  <tr style='line-height:200%'>
+		  	<td></td>
+
+		    <td><button id='swi'>Switch</button></td> 
+		  </tr>
+		  <tr>
+		  	<td><p id='lab2'>Miles:</p></td>
+		  	<td><p id='txt2' p></p></td>
+		  </tr>
+		</table>
+	</div>
+	<script src="conv.js" defer='true'></script>
+
+</body>
+</html>
